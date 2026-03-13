@@ -5,21 +5,21 @@
 class Slk < Formula
   desc "Slack for Non-Humans™ - Machine-first CLI for Slack"
   homepage "https://github.com/kehao95/slack-agent-cli"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.6/slk_0.1.6_Darwin_x86_64.tar.gz"
-      sha256 "677208ab55fb992169734134556df1a2aa1e128b256c3947dcce29d6e8c913d8"
+      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.7/slk_0.1.7_Darwin_x86_64.tar.gz"
+      sha256 "c8af53b07c72dac56cc8584ec6234134892caaa04e0153a02f67cdf4ee178b26"
 
       def install
         bin.install "slk"
       end
     end
     on_arm do
-      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.6/slk_0.1.6_Darwin_arm64.tar.gz"
-      sha256 "5852fbd4c789b580982da65e5142f64f08a4fdf6a82a16e6104200be320963fa"
+      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.7/slk_0.1.7_Darwin_arm64.tar.gz"
+      sha256 "4d501849a3aa85579996899bcc6f1981763831a7494b27fd231e6186be19cebb"
 
       def install
         bin.install "slk"
@@ -30,8 +30,8 @@ class Slk < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.6/slk_0.1.6_Linux_x86_64.tar.gz"
-        sha256 "1fa824fd6133ea9d9a5551a0943439f4485f905842c85e6cf7f7af52f8bfc473"
+        url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.7/slk_0.1.7_Linux_x86_64.tar.gz"
+        sha256 "57f6192b3894abce99cfee05729825175fb167574106b0d3e54dc898911c6180"
 
         def install
           bin.install "slk"
@@ -40,8 +40,8 @@ class Slk < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.6/slk_0.1.6_Linux_arm64.tar.gz"
-        sha256 "085cadca847475cfb92fd2b7ed6ee3dec3367f38e8dac012300b02e9d8e044c9"
+        url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.7/slk_0.1.7_Linux_arm64.tar.gz"
+        sha256 "ba42cb8eaba8faa23089453f87990bb6fed863ddf96522bb1e86b9f051ad66e7"
 
         def install
           bin.install "slk"
