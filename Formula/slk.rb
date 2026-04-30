@@ -5,21 +5,21 @@
 class Slk < Formula
   desc "Slack for Non-Humans™ - Machine-first CLI for Slack"
   homepage "https://github.com/kehao95/slack-agent-cli"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.11/slk_0.1.11_Darwin_x86_64.tar.gz"
-      sha256 "e0c33560a4b3b787b21ed62c188003e1dcead5d0f533e4c7231c635f2f9ab38a"
+      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.12/slk_0.1.12_Darwin_x86_64.tar.gz"
+      sha256 "5e106463194e03d12c811e6a0bc5e556ef4f7d446b367a652d948e407095b6f0"
 
       define_method(:install) do
         bin.install "slk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.11/slk_0.1.11_Darwin_arm64.tar.gz"
-      sha256 "ebb97f8ecf124747a4064a8347012d17d0cedde5c6ae7f250343d16182f36522"
+      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.12/slk_0.1.12_Darwin_arm64.tar.gz"
+      sha256 "870fba93a8cbfa814bb42b6c3fe08687fcea5f75992b978bdaf6577ecc7561aa"
 
       define_method(:install) do
         bin.install "slk"
@@ -29,15 +29,15 @@ class Slk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.11/slk_0.1.11_Linux_x86_64.tar.gz"
-      sha256 "7e36b044e149b0be575eb2fffca1a4b2969dbd64976af52fbdc370d82154ae58"
+      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.12/slk_0.1.12_Linux_x86_64.tar.gz"
+      sha256 "0e38b6d797b21cfefc858770d0033c68aa1b1990a9150a5fd6bafaf588b8d161"
       define_method(:install) do
         bin.install "slk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.11/slk_0.1.11_Linux_arm64.tar.gz"
-      sha256 "f83d085e402046a90b04cee21801f139b985df92a2452a0a22397c3a0bea9d81"
+      url "https://github.com/kehao95/slack-agent-cli/releases/download/v0.1.12/slk_0.1.12_Linux_arm64.tar.gz"
+      sha256 "1af6569dfca153cd6f9d478d74e834b92feaa6082c33a8a39726aecb43397034"
       define_method(:install) do
         bin.install "slk"
       end
